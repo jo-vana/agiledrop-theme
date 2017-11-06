@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.bla.body
+    - field.field.node.bla.field_dsa
+    - field.field.node.bla.field_mail
+    - field.field.node.bla.field_slike
+    - field.field.node.bla.field_yees
+    - node.type.bla
+  module:
+    - text
+    - user
+id: node.bla.teaser
+targetEntityType: node
+bundle: bla
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_dsa: true
+  field_mail: true
+  field_slike: true
+  field_yees: true

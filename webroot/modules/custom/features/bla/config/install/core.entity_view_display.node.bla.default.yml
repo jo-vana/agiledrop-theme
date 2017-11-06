@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bla.body
+    - field.field.node.bla.field_dsa
+    - field.field.node.bla.field_mail
+    - field.field.node.bla.field_slike
+    - field.field.node.bla.field_yees
+    - node.type.bla
+  module:
+    - text
+    - user
+id: node.bla.default
+targetEntityType: node
+bundle: bla
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_mail:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_dsa: true
+  field_slike: true
+  field_yees: true
