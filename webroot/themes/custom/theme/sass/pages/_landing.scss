@@ -19,4 +19,11 @@
   position: relative;
   max-width: 300px;
   margin: 0 auto;
+  ul.menu {
+    li {
+      display: inline-block;
+      width: 120px;
+      text-align: center;
+    }
+  }
 }
